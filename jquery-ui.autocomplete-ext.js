@@ -70,6 +70,7 @@
 		} else {
 			$for.val( filterData[0].id );
 		}
+		$(this).trigger('setValue');
 	}
 	$('body').on('input propertychange autocompletechange', '.ui-autocomplete-input', autoSetHandler)
 	.on('click', '.ui-autocomplete-input', function(event) {
